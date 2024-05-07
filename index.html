@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap"
+    />
+
+    <style>
+      .attribution {
+        font-size: 16px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(333, 80%, 67%);
+      }
+    </style>
+    <title>Frontend Mentor | Social proof section</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              darkGrayishMagenta: "hsl(303, 10%, 53%)",
+              lightGrayishMagenta: "hsl(300, 24%, 96%)",
+              white: "hsl(0, 0%, 100%)",
+              VeryDarkMagenta: "hsl(300, 43%, 22%)",
+              softPink: "hsl(333, 80%, 67%)",
+            },
+            fontFamily: {
+              spartan: ["Spartan", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+
+  <body
+    class="font-spartan min-h-screen bg-[url(./images/bg-pattern-top-desktop.svg)] bg-no-repeat bg-left-top bg-[url(./images/bg-pattern-bottom-desktop.svg)] bg-right-bottom flex items-center justify-center flex-col px-10 overflow-x-hidden"
+  >
+    <div
+      class="container flex flex-col items-center py-1 mx-auto mt-10 mb-4 space-y-2 md:space-y-0 md:flex-row"
+    >
+      <!-- Left Side  -->
+      <div class="flex flex-col mb-8 space-y-4 md:w-1/2">
+        <h1
+          class="max-w-md text-4xl font-bold text-center text-VeryDarkMagenta mt-12 md:text-5xl md:text-left"
+        >
+          10,000+ of our users love our products.
+        </h1>
+        <p
+          class="max-w-sm text-center text-base text-VeryDarkMagenta leading-snug md:text-left"
+        >
+          We only provide great products combined with excellent customer
+          service. See what our satisfied customers are saying about our
+          services.
+        </p>
+      </div>
+      <!-- Right Side -->
+      <!-- Begin of the Rating Cards -->
+      <section class="space-y-4 md:w-1/2">
+        <div
+          class="max-w-[440px] bg-lightGrayishMagenta px-8 py-3 rounded-md md:ml-[-2rem]"
+        >
+          <div class="flex flex-col sm:flex-row items-center">
+            <div class="star flex gap-2">
+              <img src="./images/icon-star.svg" alt="Stars" />
+              <img src="./images/icon-star.svg" alt="Stars" />
+              <img src="./images/icon-star.svg" alt="Stars" />
+              <img src="./images/icon-star.svg" alt="Stars" />
+              <img src="./images/icon-star.svg" alt="Stars" />
+            </div>
+            <p
+              class="text-xs font-bold text-VeryDarkMagenta ml-0 md:text-sm sm:ml-2 mt-2 sm:mt-0"
+            >
+              Rated 5 Stars in Reviews
+            </p>
+          </div>
+        </div>
+        <div
+          class="max-w-[440px] bg-lightGrayishMagenta px-8 py-3 rounded-md md:ml-[1rem]"
+        >
+          <div class="flex flex-col sm:flex-row items-center">
+            <div class="star flex gap-2">
+              <img src="./images/icon-star.svg" alt="Stars" />
+              <img src="./images/icon-star.svg" alt="Stars" />
+              <img src="./images/icon-star.svg" alt="Stars" />
+              <img src="./images/icon-star.svg" alt="Stars" />
+              <img src="./images/icon-star.svg" alt="Stars" />
+            </div>
+            <p
+              class="text-xs font-bold text-VeryDarkMagenta ml-0 md:text-sm sm:ml-2 mt-2 sm:mt-0"
+            >
+              Rated 5 Stars in Reviews
+            </p>
+          </div>
+        </div>
+        <div
+          class="max-w-[440px] bg-lightGrayishMagenta px-8 py-3 rounded-md md:ml-[5rem]"
+        >
+          <div class="flex flex-col sm:flex-row items-center">
+            <div class="star flex gap-2">
+              <img src="./images/icon-star.svg" alt="Stars" />
+              <img src="./images/icon-star.svg" alt="Stars" />
+              <img src="./images/icon-star.svg" alt="Stars" />
+              <img src="./images/icon-star.svg" alt="Stars" />
+              <img src="./images/icon-star.svg" alt="Stars" />
+            </div>
+            <p
+              class="text-xs font-bold text-VeryDarkMagenta ml-0 md:text-sm sm:ml-2 mt-2 sm:mt-0"
+            >
+              Rated 5 Stars in Reviews
+            </p>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- ------------------------------------------------ -->
+
+    <!-- End of the Rating Cards -->
+
+    <!-- Begin of the testiemonials -->
+    <div class="grid grid-cols-1 gap-8 mb-20 md:grid-cols-2 lg:grid-cols-3 p-8">
+      <article class="bg-VeryDarkMagenta text-white rounded-lg px-4 p-6">
+        <div class="flex items-center justify-start gap-4 mb-4 mr-2">
+          <img
+            src="./images/image-colton.jpg"
+            alt="Colton Smith"
+            class="w-10 h-10 rounded-full ml-4"
+          />
+          <div class="name flex flex-col gap-1 mr-2 text-sm">
+            <h2 class="text-white">Colton Smith</h2>
+            <h2 class="text-softPink">Verified buyer</h2>
+          </div>
+        </div>
+        <p class="leading-snug text-lightGrayishMagenta text-xs ml-2 p-2">
+          "We needed the same printed design as the one we had ordered a week
+          prior. Not only did they find the original order, but we also received
+          it in time. Excellent!"
+        </p>
+      </article>
+
+      <article
+        class="bg-VeryDarkMagenta text-white rounded-lg px-4 p-6 md:mt-4"
+      >
+        <div class="flex items-center justify-start gap-4 mb-4 mr-2">
+          <img
+            src="./images/image-irene.jpg"
+            alt="Irene Roberts"
+            class="w-10 h-10 rounded-full ml-4"
+          />
+          <div class="name flex flex-col gap-1 mr-2 text-sm">
+            <h2 class="text-white">Irene Roberts</h2>
+            <h2 class="text-softPink">Verified buyer</h2>
+          </div>
+        </div>
+        <p class="leading-snug text-lightGrayishMagenta text-xs ml-2 p-2">
+          "Customer service is always excellent and very quick turn around.
+          Completely delighted with the simplicity of the purchase and the speed
+          of delivery."
+        </p>
+      </article>
+      <article
+        class="bg-VeryDarkMagenta text-white rounded-lg px-4 p-6 md:mt-9"
+      >
+        <div class="flex items-center justify-start gap-4 mb-4 mr-2">
+          <img
+            src="./images/image-anne.jpg"
+            alt="Anne Wallace"
+            class="h-10 w-10 rounded-full ml-4"
+          />
+          <div class="name flex flex-col gap-1 mr-2 text-sm">
+            <h2 class="text-white">Anne Wallace</h2>
+            <h2 class="text-softPink">Verified buyer</h2>
+          </div>
+        </div>
+        <p class="leading-snug text-lightGrayishMagenta text-xs ml-2 p-2">
+          "Put an order with this company and can only praise them for the very
+          high standard. Will definitely use them again and recommend them to
+          everyone!"
+        </p>
+      </article>
+    </div>
+    <!-- End of the testiemonials -->
+
+    <div class="attribution text-center mt-8 text-sm text-dark-grayish-magenta">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Samar Osman</a>.
+    </div>
+  </body>
+</html>
